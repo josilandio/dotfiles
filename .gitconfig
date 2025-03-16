@@ -1,0 +1,14 @@
+[user]
+	name = Josilandio
+[init]
+	defaultBranch = main
+[alias]
+	branchs = branch -a
+	create = branch -b
+	return = checkout
+	delet = branch -d
+	rname = branch -m
+	amend = commit --amend
+	logs = log --oneline
+[color]
+	ui = true
