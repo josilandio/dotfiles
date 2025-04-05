@@ -1,0 +1,46 @@
+#
+general {
+  colors = true
+  interval = 5
+  markup = "pango"
+  color_good = "#00ff60"
+  color_degraded = "#e4fd03"
+  color_bad = "#cc1f21"
+}
+#
+# >> order += "battery all"
+order += "wireless _first_"
+order += "ethernet _first_"
+order += "volume master"
+order += "tztime local"
+order += "tztime date"
+#
+battery all {
+  format = " %status:%percentage "
+  last_full_capacity = true
+  integer_battery_capacity = true
+  low_threshold = 40
+}
+wireless _first_ {
+  format_up = " W:ONLINE "
+  # >> format_up = "W:%ip"
+  format_down = " W:OFFLINE "
+}
+ethernet _first_ {
+  format_up = " E:ONLINE "
+  # >> format_up = "E:%ip"
+  format_down = " E:OFFLINE "
+}
+volume master {
+  format = " V:%volume "
+  format_muted = " <span color='#e4fd03'>V:(MUTED)</span> "
+  device = "default"
+  mixer = "Master"
+  mixer_idx = 0
+}
+tztime local {
+  format = " %H:%M "
+}
+tztime date {
+  format = " %d-%m-%Y "
+}
