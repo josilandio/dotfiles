@@ -1,0 +1,17 @@
+[user]
+	name = Josilandio
+[init]
+	defaultBranch = main
+[alias]
+	create = checkout -b
+	branchs = branch -a
+	return = checkout
+	delet = branch -d
+	rname = branch -m
+	logs = log --oneline
+	very = "!func(){ git status && git branchs -q; }; func"
+	amend = commit --amend
+[color]
+	ui = true
+[core]
+	editor = vim
