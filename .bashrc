@@ -41,12 +41,12 @@ if [ "$color_prompt" = yes ]; then
   PROMPT_COMMAND='PROMPT_TIME=$(date +\%H:\%M:\%S)'
 
   if [ "$(id -u)" -eq 0 ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[0;33m\]$(git_branch) \[\033[1;36m\]$PROMPT_TIME\[\033[00m\] \$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[0;33m\]$(git_branch) \[\033[38;5;129m\]$PROMPT_TIME\[\033[00m\] \$ '
   else
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[0;33m\]$(git_branch) \[\033[1;36m\]$PROMPT_TIME\[\033[00m\] \$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[0;33m\]$(git_branch) \[\033[38;5;129m\]$PROMPT_TIME\[\033[00m\] \$ '
   fi
 else
-  PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(git_branch) \[\033[1;36m\]$PROMPT_TIME\[\033[00m\] \$ '
+  PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(git_branch) \[\033[38;5;129m\]$PROMPT_TIME\[\033[00m\] \$ '
 fi
 unset color_prompt force_color_prompt
 #
