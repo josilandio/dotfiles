@@ -36,9 +36,9 @@ if [ "$color_prompt" = yes ]; then
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
   }
   if [ -z "$PROMPT_TIME" ]; then
-    PROMPT_TIME=$(date +\%H:\%M:\%S.\%3N)
+    PROMPT_TIME=$(date +\%H:\%M:\%S)
   fi
-  PROMPT_COMMAND='PROMPT_TIME=$(date +\%H:\%M:\%S.\%3N)'
+  PROMPT_COMMAND='PROMPT_TIME=$(date +\%H:\%M:\%S)'
 
   if [ "$(id -u)" -eq 0 ]; then
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[0;33m\]$(git_branch) \[\033[1;36m\]$PROMPT_TIME\[\033[00m\] \$ '
