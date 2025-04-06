@@ -1,4 +1,9 @@
 {
+  // STAR --- Extensions:
+  // - Color Highlight, by Sergii N
+  // - Min Theme, by Miguel Solorio
+  // - Symbols, by Miguel Solorio
+  // --- END
   "files.autoSave": "afterDelay",
   "security.workspace.trust.untrustedFiles": "open",
   "workbench.startupEditor": "newUntitledFile",
