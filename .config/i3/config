@@ -1,73 +1,70 @@
+# Tecla padrão.
 # >> set $mod Mod1
 set $mod Mod4
-#
+# Definição de fonte.
 font pango:Jetbrains Mono Bold 9
-#
+# Execução de aplicativos.
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 exec --no-startup-id nitrogen --restore
-#
+# Atalhos para controle de volume.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
-#
+# Atalhos personalizados para controle de volume.
 bindsym $mod+comma exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -1% && $refresh_i3status
 bindsym $mod+period exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +1% && $refresh_i3status
 bindsym $mod+m exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-#
+# Modo flutuante.
 floating_modifier $mod
-#
+# Arrastar janelas no modo de tiling.
 tiling_drag modifier titlebar
-#
+# Atalhos personalizados.
 bindsym $mod+Return exec kitty
 # >> bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+t exec kitty
 bindsym $mod+Shift+t exec kitty
-#
+# Atalho para fechar janelas ativas.
 bindsym $mod+Shift+q kill
 bindsym $mod+q kill
-#
+# Atalho para abrir lançador de aplicativos.
 bindsym $mod+d exec --no-startup-id dmenu_run
-#
+# Atalhos para navegar entre janelas.
 bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
 bindsym $mod+ccedilla focus right
-#
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
-#
+# Atalhos para mover janelas.
 bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
 bindsym $mod+Shift+ccedilla move right
-#
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
-# 
+# Atalho para divisões horizontais e verticais.
 bindsym $mod+h split h
-#
 bindsym $mod+v split v
-#
+# Atalho para tela cheia.
 bindsym $mod+f fullscreen toggle
-#
+# Atalhos para mudar o layout das janelas.
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
-#
+# Atalhos para alternar entre janelas flutuantes.
 bindsym $mod+space floating toggle
-#
 bindsym $mod+Shift+space focus mode_toggle
-#
+# Atalho para focar a janela pai.
 bindsym $mod+a focus parent
-#
+# Definição de espaços de trabalho.
 set $ws1 " 1: /terminal "
 set $ws2 " 2: /browser "
 set $ws3 " 3: /editor "
@@ -78,7 +75,7 @@ set $ws7 " 7: /cloud "
 set $ws8 " 8: /email "
 set $ws9 " 9: /domains "
 set $ws10 " 0: /server "
-#
+# Atalhos para alternar entre espaços de trabalho.
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
 bindsym $mod+3 workspace number $ws3
@@ -89,7 +86,7 @@ bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
-#
+# Mover containers para diferentes espaços de trabalho.
 bindsym $mod+Shift+1 move container to workspace number $ws1
 bindsym $mod+Shift+2 move container to workspace number $ws2
 bindsym $mod+Shift+3 move container to workspace number $ws3
@@ -100,37 +97,32 @@ bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
-#
+# Comandos do i3wm.
 bindsym $mod+Shift+c reload
-#
 bindsym $mod+Shift+r restart
-#
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-#
+# Atalhos para redimensionar janelas.
 mode "resize" {
   bindsym j resize shrink width 10 px or 10 ppt
-  #
   bindsym k resize grow height 10 px or 10 ppt
   bindsym ccedilla resize grow width 10 px or 10 ppt
   bindsym l resize shrink height 10 px or 10 ppt
-  #
   bindsym Left resize shrink width 10 px or 10 ppt
   bindsym Down resize grow height 10 px or 10 ppt
   bindsym Up resize shrink height 10 px or 10 ppt
   bindsym Right resize grow width 10 px or 10 ppt
-  #
   bindsym Return mode "default"
   bindsym Escape mode "default"
   bindsym $mod+r mode "default"
 }
 bindsym $mod+r mode "resize"
-#
+# Definição de gaps entre janelas.
 gaps inner 19px
 gaps outer 19px
 workspace 9 gaps inner 19px
 workspace 9 gaps outer 19px
 smart_gaps inverse_outer
-#
+# Outras definições das janelas.
 title_align center
 default_border pixel 1
 client.focused           #7b1fa2 #7b1fa2 #ffffff #7b1fa2  #7b1fa2
@@ -139,7 +131,7 @@ client.focused_inactive  #000000 #000000 #ffffff #000000  #000000
 client.urgent            #cc1f21 #cc1f21 #ffffff #cc1f21  #cc1f21
 client.placeholder       #000000 #000000 #ffffff #000000  #000000
 client.background        #ffffff
-#
+# Definições da barra de status.
 bar {
   status_command i3status
   position bottom
