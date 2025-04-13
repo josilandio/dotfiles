@@ -2,6 +2,7 @@
 	name = Josilandio
 [init]
 	defaultBranch = main
+# Apelido/Atalho definido pelo usuário.
 [alias]
 	create = checkout -b
 	branchs = branch -a

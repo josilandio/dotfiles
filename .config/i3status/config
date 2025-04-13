@@ -1,4 +1,4 @@
-#
+# Principais configurações de exibição.
 general {
   colors = true
   interval = 5
@@ -7,14 +7,14 @@ general {
   color_degraded = "#e4fd03"
   color_bad = "#cc1f21"
 }
-#
+# Ordem dos módulos de status.
 # >> order += "battery all"
 order += "wireless _first_"
 order += "ethernet _first_"
 order += "volume master"
 order += "tztime local"
 order += "tztime date"
-#
+# Módulos.
 battery all {
   format = " %status:%percentage "
   last_full_capacity = true
