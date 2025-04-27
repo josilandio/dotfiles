@@ -1,0 +1,16 @@
+[user]
+	name = Josilandio
+[alias]
+	create = checkout -b
+	branchs = branch -a
+	return = checkout
+	delet = branch -d
+	rname = branch -m
+	logs = log --oneline
+	amend = commit --amend
+[color]
+	ui = true
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
