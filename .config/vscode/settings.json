@@ -1,0 +1,83 @@
+// List of extensions used:
+//   - GitLens, by GitKraken
+//   - Live Server, by Ritwick Dey
+//   - Min Theme, by Miguel Solorio
+//   - Symbols, by Miguel Solorio
+
+{
+  "files.autoSave": "afterDelay",
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.startupEditor": "newUntitledFile",
+  // Visual.
+  "editor.fontSize": 12,
+  "editor.lineHeight": 1.6,
+  "editor.fontFamily": "Jetbrains Mono",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.rulers": [80, 120],
+  "editor.renderLineHighlight": "gutter",
+  "editor.semanticHighlighting.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "symbols.hidesExplorerArrows": false,
+  "breadcrumbs.enabled": false,
+  "window.menuBarVisibility": "toggle",
+  "explorer.compactFolders": false,
+  "explorer.fileNesting.enabled": true,
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontFamily": "Jetbrains Mono",
+  "workbench.statusBar.visible": true,
+  "workbench.iconTheme": "symbols",
+  "workbench.colorTheme": "Min Dark",
+  "workbench.activityBar.location": "hidden",
+  "workbench.colorCustomizations": {
+    // Terminal.
+    "terminal.foreground": "#ffffff",
+    "terminal.background": "#0f0f0f",
+    "terminal.ansiBlack": "#0f0f0f",
+    "terminal.ansiBlue": "#2141af",
+    "terminal.ansiCyan": "#52c0ff",
+    "terminal.ansiGreen": "#00ff60",
+    "terminal.ansiMagenta": "#820ad1",
+    "terminal.ansiRed": "#cc1f21",
+    "terminal.ansiWhite": "#e1e2e4",
+    "terminal.ansiYellow": "#e4fd03",
+    "terminal.ansiBrightBlack": "#0f0f0f",
+    "terminal.ansiBrightBlue": "#2141af",
+    "terminal.ansiBrightCyan": "#52c0ff",
+    "terminal.ansiBrightGreen": "#00ff60",
+    "terminal.ansiBrightMagenta": "#820ad1",
+    "terminal.ansiBrightRed": "#cc1f21",
+    "terminal.ansiBrightWhite": "#e1e2e4",
+    "terminal.ansiBrightYellow": "#e4fd03",
+    "terminal.selectionBackground": "#505e8d",
+    "terminalCursor.foreground": "#00ff60"
+  },
+  // Disabling features.
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  // Extensions.
+  "gitlens.currentLine.enabled": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "window.titleBarStyle": "native",
+  "apc.header": {
+    "height": 36
+  },
+  "apc.listRow": {
+    "height": 24
+  },
+  "apc.font.family": "Inter",
+  "apc.stylesheet": {
+    ".title-label > h2": "display: none",
+    ".editor-actions": "display: none",
+    ".nosidebar .inline-tabs-placeholder": "width: 75px",
+    ".pane-header": "padding: 0 8px",
+    ".pane-body": "padding: 8px",
+    ".split-view-view:first-child .pane-header": "display: none !important;",
+    ".monaco-list-row": "border-radius: 4px;",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
+  },
+  "git.ignoreLimitWarning": true,
+  "git.openRepositoryInParentFolders": "never"
+}
