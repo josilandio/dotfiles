@@ -20,6 +20,13 @@
   "editor.minimap.enabled": false,
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
+  // ---
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": true,
+  "editor.matchBrackets": "always",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  // ---
   "symbols.hidesExplorerArrows": false,
   "breadcrumbs.enabled": false,
   "window.menuBarVisibility": "toggle",
