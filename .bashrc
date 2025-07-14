@@ -54,9 +54,9 @@ if [ "$color_prompt" = yes ]; then
   PROMPT_COMMAND='PROMPT_TIME=$(date +\%H:\%M:\%S)'
 
   if [ "$(id -u)" -eq 0 ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[0;33m\]$(git_branch) \[\033[38;5;129m\]\n$PROMPT_TIME\[\033[00m\] \$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[0;33m\]$(git_branch) \[\033[35m\]$(ruby_version_prompt)\[\033[00m\]\n$PROMPT_TIME \$ '
   else
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[0;33m\]$(git_branch) \[\033[38;5;129m\]\n$PROMPT_TIME\[\033[00m\] \$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[0;33m\]$(git_branch) \[\033[35m\]$(ruby_version_prompt)\[\033[00m\]\n$PROMPT_TIME \$ '
   fi
 else
   PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(git_branch) \[\033[38;5;129m\]\n$PROMPT_TIME\[\033[00m\] \$ '
@@ -104,3 +104,16 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# ---
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - bash)"
+# Function to display the active Ruby version (via rbenv).
+ruby_version_prompt() {
+  if command -v rbenv >/dev/null 2>&1; then
+    local version=$(rbenv version-name 2>/dev/null)
+    if [ -n "$version" ]; then
+      echo -n "ruby-$version"
+    fi
+  fi
+}
