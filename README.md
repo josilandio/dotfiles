@@ -1,19 +1,8 @@
 <!-- @josilandio: development environment -->
 
-### Composition
-
-- <samp>CLI (COMMAND LINE INTERFACE)</samp>
-  - `bash`
-  - `tmux`
-  - `ranger`
-  - `git`
-  - `neovim`
-
-- <samp>GUI (GRAPHICAL USER INTERFACE)</samp>
-  - `kitty`
-  - `visual studio code`
-  - `arandr`
-  - `nitrogen`
+<a>
+  <img src=".github/imgs/project-dotfile.png" alt="...">
+</a>
 
 ### License
 Copyright (c) 2025 <br>
