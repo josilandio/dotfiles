@@ -1,8 +1,8 @@
 <!-- @josilandios: development environment -->
 
-<p style="font-size: 1.8rem">
+<h2 align="center">
   <samp>DOTFILES</samp>
-</p>
+</h2>
 
 ### Appearance
 
@@ -15,4 +15,6 @@ For everything to work flawlessly, you will need:
 - [Git](https://git-scm.com/)
 
 ---
-<p style="text-align: center">Copyright © 2026</p>
+<p align="center">
+  Copyright &copy; 2026 <br>
+</p>
