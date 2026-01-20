@@ -4,10 +4,11 @@
   <samp>DOTFILES</samp>
 </h2>
 
-### Appearance
+### Information
 
 This setup focuses on a minimalist yet functional aesthetic, to create a cohesive workspace:
-- **Typography:** [JetBrains Mono](https://www.jetbrains.com/lp/mono/) 
+- **Typography:** [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+- **Shell:** [Bash](https://www.gnu.org/software/bash/)
 
 ### Dependency
 
