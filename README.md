@@ -7,8 +7,9 @@
 ### Information
 
 This setup focuses on a minimalist yet functional aesthetic, to create a cohesive workspace:
-- **Typography:** [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 - **Shell:** [Bash](https://www.gnu.org/software/bash/)
+- **Term:** [Windows Terminal](https://github.com/microsoft/terminal)
+- **Typography:** [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
 
 ### Dependency
 
