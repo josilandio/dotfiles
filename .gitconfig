@@ -1,0 +1,14 @@
+[user]
+	name = josilandio
+[color]
+	ui = true
+[core]
+	editor = vim
+[alias]
+	create = checkout -b
+	branchs = branch -a
+	return = checkout
+	delet = branch -d
+	rename = branch -m
+	logs = log --oneline
+	amend = commit --amend
