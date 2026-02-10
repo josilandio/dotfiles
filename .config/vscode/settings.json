@@ -1,0 +1,97 @@
+// Extensions used:
+// - Min Theme, by Miguel Solorio
+// - Symbols, by Miguel Solorio
+
+{
+  "files.autoSave": "afterDelay",
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.startupEditor": "newUntitledFile",
+  // Visual.
+  "editor.fontSize": 12,
+  "editor.lineHeight": 1.6,
+  "editor.fontFamily": "Jetbrains Mono",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.rulers": [80, 120],
+  "editor.renderLineHighlight": "gutter",
+  "editor.semanticHighlighting.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  // ---
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": true,
+  "editor.matchBrackets": "always",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  // ---
+  "symbols.hidesExplorerArrows": false,
+  "breadcrumbs.enabled": false,
+  "window.menuBarVisibility": "toggle",
+  "explorer.compactFolders": false,
+  "explorer.fileNesting.enabled": true,
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontFamily": "Jetbrains Mono",
+  "workbench.statusBar.visible": true,
+  "workbench.iconTheme": "symbols",
+  "workbench.colorCustomizations": {
+    // Terminal.
+    "terminal.foreground": "#ffffff",
+    "terminal.background": "#1e1e1e",
+    "terminal.ansiBlack": "#1a1a1a",
+    "terminal.ansiBlue": "#0869cb",
+    "terminal.ansiCyan": "#479ec2",
+    "terminal.ansiGreen": "#26a439",
+    "terminal.ansiMagenta": "#9647bf",
+    "terminal.ansiRed": "#cc372e",
+    "terminal.ansiWhite": "#98989d",
+    "terminal.ansiYellow": "#cdac08",
+    "terminal.ansiBrightBlack": "#464646",
+    "terminal.ansiBrightBlue": "#0a84ff",
+    "terminal.ansiBrightCyan": "#76d6ff",
+    "terminal.ansiBrightGreen": "#32d74b",
+    "terminal.ansiBrightMagenta": "#bf5af2",
+    "terminal.ansiBrightRed": "#ff453a",
+    "terminal.ansiBrightWhite": "#ffffff",
+    "terminal.ansiBrightYellow": "#ffd60a",
+    "terminal.selectionBackground": "#3f638b",
+    "terminalCursor.background": "#ffffff",
+    "terminalCursor.foreground": "#98989d"
+    },
+  // Disabling features.
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  // Extensions.
+  "liveServer.settings.donotShowInfoMsg": true,
+  // Window custom/native title bar.
+  "window.titleBarStyle": "native",
+  "apc.eletron": {
+    "titleBarStyle": "hiddenInset",
+  },
+  "apc.header": {
+    "height": 36
+  },
+  "apc.listRow": {
+    "height": 24
+  },
+  "apc.font.family": "Inter",
+  "apc.stylesheet": {
+    ".title-label > h2": "display: none",
+    ".editor-actions": "display: none",
+    ".nosidebar .inline-tabs-placeholder": "width: 75px",
+    ".pane-header": "padding: 0 8px",
+    ".pane-body": "padding: 8px",
+    ".split-view-view:first-child .pane-header": "display: none !important;",
+    ".monaco-list-row": "border-radius: 4px;",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
+  },
+  "git.ignoreLimitWarning": true,
+  "git.openRepositoryInParentFolders": "never",
+  "workbench.colorTheme": "Min Dark",
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "chat.viewSessions.orientation": "stacked",
+  "workbench.activityBar.location": "hidden"
+}
