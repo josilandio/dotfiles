@@ -8,6 +8,7 @@
 
 This setup focuses on a minimalist yet functional aesthetic, to create a cohesive workspace:
 - **Shell:** [Bash](https://www.gnu.org/software/bash/)
+- **Editor:** [VS Code](https://code.visualstudio.com/)
 
 ### Dependency
 
