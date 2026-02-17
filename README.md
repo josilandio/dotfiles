@@ -8,12 +8,14 @@
 
 This setup focuses on a minimalist yet functional aesthetic, to create a cohesive workspace:
 - **Shell:** [Bash](https://www.gnu.org/software/bash/)
+- **Term:** [Windows Terminal](https://github.com/microsoft/terminal)
 - **Editor:** [VS Code](https://code.visualstudio.com/)
 
 ### Dependency
 
 For everything to work flawlessly, you will need:
 - [Git](https://git-scm.com/)
+- [Font Jetbrains Mono](https://www.jetbrains.com/lp/mono/)
 
 ---
 <p align="center">

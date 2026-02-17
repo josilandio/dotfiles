@@ -1,0 +1,107 @@
+{
+  "$help": "https://aka.ms/terminal-documentation",
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+  "actions": [],
+  "centerOnLaunch": true,
+  "copyFormatting": "none",
+  "copyOnSelect": false,
+  "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+  "initialCols": 126,
+  "initialRows": 36,
+  "keybindings": 
+  [
+    {
+      "id": "Terminal.CopyToClipboard",
+      "keys": "ctrl+c"
+    },
+    {
+      "id": "Terminal.FindText",
+      "keys": "ctrl+shift+f"
+    },
+    {
+      "id": "Terminal.PasteFromClipboard",
+      "keys": "ctrl+v"
+    },
+    {
+      "id": "Terminal.DuplicatePaneAuto",
+      "keys": "alt+shift+d"
+    }
+  ],
+  "newTabMenu": 
+  [
+    {
+      "type": "remainingProfiles"
+    }
+  ],
+  "profiles":
+  {
+    "defaults": 
+    {
+      "bellStyle": "none",
+      "colorScheme": "Apple System Colors",
+      "font": 
+        {
+          "face": "JetBrains Mono",
+          "size": 9
+        },
+      "scrollbarState": "hidden",
+      "suppressApplicationTitle": true
+    },
+    "list": 
+    [
+      {
+        "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -NoLogo",
+        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "hidden": false,
+        "icon": "\ue756",
+        "name": "PowerShell",
+        "tabTitle": "PowerShell"
+      },
+      {
+        "commandline": "%SystemRoot%\\System32\\cmd.exe",
+        "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+        "hidden": false,
+        "icon": "\ue756",
+        "name": "Prompt de comando",
+        "tabTitle": "Prompt de comando"
+      },
+      {
+        "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+        "hidden": false,
+        "icon": "\ue756",
+        "name": "Azure Cloud Shell",
+        "source": "Windows.Terminal.Azure",
+        "tabTitle": "Azure Cloud Shell"
+      }
+    ]
+  },
+  "schemes": 
+  [
+    {
+      "background": "#1E1E1E",
+      "black": "#1A1A1A",
+      "blue": "#0869CB",
+      "brightBlack": "#464646",
+      "brightBlue": "#0A84FF",
+      "brightCyan": "#76D6FF",
+      "brightGreen": "#32D74B",
+      "brightPurple": "#BF5AF2",
+      "brightRed": "#FF453A",
+      "brightWhite": "#FFFFFF",
+      "brightYellow": "#FFD60A",
+      "cursorColor": "#98989D",
+      "cyan": "#479EC2",
+      "foreground": "#FFFFFF",
+      "green": "#26A439",
+      "name": "Apple System Colors",
+      "purple": "#9647BF",
+      "red": "#CC372E",
+      "selectionBackground": "#3F638B",
+      "white": "#98989D",
+      "yellow": "#CDAC08"
+    }
+  ],
+  "showTerminalTitleInTitlebar": true,
+  "theme": "system",
+  "themes": []
+}
