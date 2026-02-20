@@ -16,6 +16,7 @@ This setup focuses on a minimalist yet functional aesthetic, to create a cohesiv
 For everything to work flawlessly, you will need:
 - [Git](https://git-scm.com/)
 - [Font Jetbrains Mono](https://www.jetbrains.com/lp/mono/)
+- [Tmux](https://github.com/tmux/tmux/wiki)
 
 ---
 <p align="center">
