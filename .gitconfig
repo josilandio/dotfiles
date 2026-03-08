@@ -1,9 +1,14 @@
+# User Information
+# -----------
 [user]
 	name = josilandio
 [color]
 	ui = true
 [core]
 	editor = vim
+
+# Aliases defined for use
+# -----------
 [alias]
 	create = checkout -b
 	branchs = branch -a

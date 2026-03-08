@@ -1,3 +1,6 @@
+// VScode v1.110.1
+// -----------
+
 // Extensions used:
 // - Min Theme, by Miguel Solorio
 // - Symbols, by Miguel Solorio
@@ -18,13 +21,16 @@
   "editor.minimap.enabled": false,
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
-  // ---
+  // -----------
+  "chat.disableAIFeatures": true,
+  "chat.commandCenter.enabled": false,
+  // -----------
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
   "editor.guides.bracketPairsHorizontal": true,
   "editor.matchBrackets": "always",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  // ---
+  // -----------
   "symbols.hidesExplorerArrows": false,
   "breadcrumbs.enabled": false,
   "window.menuBarVisibility": "toggle",

@@ -1,4 +1,4 @@
-<!-- @josilandio/dotfiles: Development environment -->
+<!-- Development environment -->
 
 <h2 align="center">
   <samp>DOTFILES</samp>
@@ -22,3 +22,28 @@ For everything to work flawlessly, you will need:
 <p align="center">
   Copyright &copy; 2026 <br>
 </p>
+
+<!--
+#  _____________________________________________
+# |                                             |
+# |               ./dotfiles                    |
+# |     Copyright (c) 2026, @josilandio         |
+# |_____________________________________________|
+#
+
+The information in these files was taken from the documentation of the respective
+tools/technologies, or from other dotfiles used as references from r/unixporn.
+
+Tested Environments
+-----------
+* Debian 13 (Stable)
+* Microsoft Windows Pro, WLS (Windows Subsystem for Linux)
+
+Branches
+-----------
+Project/
+├─ * main: simplified and tested codebase for the environments listed above.
+│    └── * develop: basic and dirty codebase with features under testing.
+└─ * ...
+
+-->

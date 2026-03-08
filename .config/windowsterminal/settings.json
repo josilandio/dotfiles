@@ -1,7 +1,25 @@
+// wt - the Windows Terminal v1.23.2021
+// -----------
 {
-  "$help": "https://aka.ms/terminal-documentation",
   "$schema": "https://aka.ms/terminal-profiles-schema",
-  "actions": [],
+  "actions": [
+    {
+      "id": "split-right",
+      "command":
+      {
+        "action": "splitPane",
+        "split": "vertical"
+      }
+    },
+    {
+      "id": "split-down",
+      "command":
+      {
+        "action": "splitPane",
+        "split": "horizontal"
+      }
+    }
+  ],
   "centerOnLaunch": true,
   "copyFormatting": "none",
   "copyOnSelect": false,
@@ -13,6 +31,14 @@
     {
       "id": "Terminal.CopyToClipboard",
       "keys": "ctrl+c"
+    },
+    {
+      "id": "split-right",
+      "keys": "ctrl+w"
+    },
+    {
+      "id": "split-down",
+      "keys": "ctrl+e"
     },
     {
       "id": "Terminal.FindText",
@@ -103,5 +129,5 @@
   ],
   "showTerminalTitleInTitlebar": true,
   "theme": "system",
-  "themes": []
+  "themes": [],
 }

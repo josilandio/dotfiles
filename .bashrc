@@ -1,5 +1,5 @@
-# GNU bash, version v5.2.21
-
+# GNU bash v5.2.21
+# -----------
 # If not running interactively, don't do anything.
 case $- in
   *i*) ;;
