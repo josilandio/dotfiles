@@ -46,4 +46,16 @@ Project/
 │    └── * develop: basic and dirty codebase with features under testing.
 └─ * ...
 
+
+Background Images
+-----------------
+The wallpaper images stored in this repository are the intellectual property of
+Microsoft and their respective authors.
+
+These images are intended for personal, non-commercial use only. Any unauthorized
+redistribution, modification, or commercial use is strictly prohibited without
+prior permission from the respective copyright holders.
+
+For more information, please visit: https://www.microsoft.design
+
 -->
